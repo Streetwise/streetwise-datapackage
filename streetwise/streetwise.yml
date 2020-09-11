@@ -1,0 +1,32 @@
+legends:
+    "streetwise-safety":
+        "Safety score":
+            fillColor: "#93bddf"
+            fillOpacity: 1
+            stroke: "#000000"
+            strokeWidth: 2
+            strokeOpacity: 1
+
+snapshots:
+    - streetwise-safety:
+        title: "Streetwise Safety score"
+        description: "Gebäude mit Adressen, die mindestens einen Handelsregistereintrag aufweisen."
+        keywords:
+            - streetwise
+            - safety
+        gemeindescan_meta:
+            topic: "Sicherheit"
+        bounds:
+            - "geo:47.08921,8.26082"
+            - "geo:47.03939,8.34917"
+        resources:
+            - "luzern_internalcomp":
+                mediatype: "application/vnd.simplestyle-extended"
+        sources:
+            -
+                url: "https://streetwise.space"
+                title: "Crowdsourcing by Streetwise"
+            -
+                url: "https://mapillary.org"
+                title: "Mapillary"
+        attribution: "OdbL"

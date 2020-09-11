@@ -55,3 +55,5 @@ with open(yml_file, 'r', encoding="utf-8") as fp:
             dp_file = project+"/snapshots/"+name+".json"
             with open(dp_file + "", 'w') as outfile:
                 json.dump(dp, outfile)
+
+            print("The rocket has launched 🚀")
