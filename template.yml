@@ -1,19 +1,19 @@
 snapshot:
-    name: ""
-    title: ""
-    description: ""
+    name: "streetwise"
+    title: "Streetwise score"
+    description: "Insights from a Metropolitanregion Zürich project"
     version: "1.0.0"
     datapackage_version: "1.0.0"
     gemeindescan_version: "0.3.1"
     gemeindescan_meta:
-        topic: ""
+        topic: "urbanism"
         permission: "NOT_LISTED"
         is_showcase: false
         bfs_number: 1051
     format: "geojson"
     license: "ODC-By-1.0"
     licenses:
-        - 
+        -
             url: "https://opendatacommons.org/licenses/by/1.0/"
             type: "ODC-By-1.0"
     keywords:
@@ -22,13 +22,13 @@ snapshot:
         - "gemeindescan"
         - "geodata"
     views:
-        - 
+        -
             name: "mapview"
             specType: "gemeindescanSnapshot"
             spec:
-                title: ""
-                description: ""
-                attribution: ""
+                title: "Safety Score"
+                description: "A rating of relative safety perception"
+                attribution: "Streetwise ARGE"
     sources:
         -
             url: "https://www.openstreetmap.org/copyright"
@@ -40,8 +40,8 @@ snapshot:
             mediatype: "application/vnd.mapbox-vector-tile"
     maintainers:
         -
-            web: "https://github.com/n0rdlicht/"
-            name: "Thorben Westerhuys"
+            web: "https://github.com/loleg/"
+            name: "Oleg Lavrovsky"
     contributors:
         -
             web: "https://cividi.ch"
@@ -49,7 +49,7 @@ snapshot:
             email: "info@cividi.ch"
             title: "cividi"
 legend:
-    label: ""
+    label: "Safety scores"
     size: 1
     shape: "circle"
     primary: false

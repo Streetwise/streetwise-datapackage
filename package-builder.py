@@ -1,19 +1,19 @@
 import json
 from ruamel import yaml
 
-project = "sample-project"
+project = "streetwise"
 yml_file = project+"/"+project+".yml"
 
 viewSpecKey = ["title","description","bounds","attribution"]
 dpSpecKey = ["title","description","version","datapackage_version","gemeindescan_version","gemeindescan_meta","format","keywords","license","maintainers","contributors","sources"]
 
 with open("template.yml", 'r', encoding="utf-8") as tf:
-    template = yaml.load(tf)
+    template = yaml.safe_load(tf)
     dp_template = template["snapshot"]
     legend_template = template["legend"]
 
 with open(yml_file, 'r', encoding="utf-8") as fp:
-    projectData = yaml.load(fp)
+    projectData = yaml.safe_load(fp)
     for entries in projectData["snapshots"]:
         for name, snapshotData in entries.items():
             dp = dp_template.copy()
